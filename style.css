@@ -1,0 +1,303 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral da página */
+body {
+  background-color: #0f172a;
+  color: #f8fafc;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Cabeçalho e menu */
+header {
+  background-color: #111c35;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* Área principal das seções */
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 72px 20px;
+}
+
+/* Títulos */
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+h2 {
+  color: #38bdf8;
+  font-size: 2rem;
+  margin-bottom: 28px;
+}
+
+h3 {
+  color: #f8fafc;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+/* Textos gerais */
+p,
+li {
+  color: #cbd5e1;
+  text-align: left;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+/* Hero: apresentação inicial */
+.hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.hero-texto {
+  flex: 1;
+}
+
+.hero-texto h1 {
+  text-align: left;
+}
+
+.hero-texto p {
+  max-width: 560px;
+  font-size: 1.1rem;
+}
+
+.hero-imagem {
+  flex: 0 0 260px;
+  text-align: center;
+}
+
+.hero-imagem img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+  box-shadow: 0 0 24px rgba(56, 189, 248, 0.3);
+}
+
+/* Botões da hero */
+.botoes {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  margin-top: 26px;
+  flex-wrap: wrap;
+}
+
+.botoes a {
+  display: inline-block;
+  background-color: #38bdf8;
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 11px 18px;
+  border-radius: 8px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.botoes a:hover {
+  background-color: #7dd3fc;
+  transform: translateY(-2px);
+}
+
+/* Seção sobre */
+.sobre {
+  border-top: 1px solid #24314d;
+}
+
+/* Seção habilidades */
+.habilidades {
+  border-top: 1px solid #24314d;
+}
+
+.habilidades h3 {
+  margin-top: 24px;
+}
+
+.habilidades ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.habilidades li {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 999px;
+  padding: 8px 14px;
+}
+
+/* Seção projetos */
+.projetos {
+  border-top: 1px solid #24314d;
+}
+
+.card {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.card h3 {
+  color: #38bdf8;
+  font-size: 1.4rem;
+}
+
+.card .tecnologias {
+  color: #7dd3fc;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.card a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 8px;
+  padding: 9px 14px;
+  border: 1px solid #38bdf8;
+  border-radius: 7px;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.card a:hover {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+/* Seção contato */
+.contato {
+  border-top: 1px solid #24314d;
+}
+
+.links-contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.links-contato a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.links-contato a:hover {
+  color: #7dd3fc;
+  text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+  padding: 24px 20px;
+  text-align: center;
+  background-color: #111c35;
+  border-top: 1px solid #24314d;
+}
+
+footer p {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Versão para celular */
+@media (max-width: 700px) {
+  nav {
+    gap: 14px;
+    padding: 15px;
+  }
+
+  section {
+    padding: 56px 20px;
+  }
+
+  .hero {
+    min-height: auto;
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 28px;
+  }
+
+  .hero-texto h1,
+  .hero-texto p {
+    text-align: center;
+  }
+
+  .hero-imagem {
+    flex-basis: auto;
+  }
+
+  .hero-imagem img {
+    width: 190px;
+    height: 190px;
+  }
+
+  .botoes {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+}
